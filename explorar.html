@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playr - Explorar Catálogo</title>
+    <link rel="stylesheet" href="explorar.css">
+</head>
+<body>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="Imagens/logo.png" alt="Playr Logo" class="logo-img">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorar.html">Explorar</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Comunidade</a></li>
+            </ul>
+            <form>
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="explore-main">
+        <h1>Explorar Catálogo de Jogos</h1>
+
+        <div class="catalog-container">
+            <!-- COLUNA DE FILTROS -->
+            <aside class="filters-sidebar">
+                <h3>Filtros</h3>
+                
+                <div class="filter-group">
+                    <h4>Plataformas:</h4>
+                    <label><input type="checkbox"> PC</label>
+                    <label><input type="checkbox"> PlayStation</label>
+                    <label><input type="checkbox"> Xbox</label>
+                    <label><input type="checkbox"> Nintendo</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Gênero:</h4>
+                    <label><input type="checkbox"> RPG</label>
+                    <label><input type="checkbox"> Ação</label>
+                    <label><input type="checkbox"> Indie</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Preço:</h4>
+                    <label><input type="radio" name="preco" checked> Todos</label>
+                    <label><input type="radio" name="preco"> Grátis</label>
+                </div>
+            </aside>
+
+            <!-- CONTEÚDO DO CATÁLOGO -->
+            <section class="catalog-grid-section">
+                <!-- BARRA DE BUSCA ALINHADA AO LADO DOS FILTROS -->
+                <div class="search-filter-bar">
+                    <input type="text" placeholder="Digite o nome do jogo...">
+                    <button type="button">Filtrar</button>
+                </div>
+
+                <div class="catalog-header-info">
+                    <span>Exibindo 1.240 jogos</span>
+                    <select>
+                        <option>Ordenar por</option>
+                        <option>Mais populares</option>
+                        <option>Melhor avaliados</option>
+                    </select>
+                </div>
+
+                <div class="games-grid">
+                    <!-- Jogo A -->
+                    <article>
+                        <img src="Imagens/God_of_War_Ragnarök_capa.jpg" alt="Capa Jogo A">
+                        <h3>God of War Ragnarök</h3>
+                        <p>★ 4.7</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo B -->
+                    <article>
+                        <img src="Imagens/marvel.avif" alt="Capa Jogo B">
+                        <h3>Marvel's Spider-Man 2</h3>
+                        <p>★ 4.2</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo C -->
+                    <article>
+                        <img src="Imagens/placeholder.jpg" alt="Capa Jogo C">
+                        <h3>Jogo C</h3>
+                        <p>★ 4.9</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo D -->
+                    <article>
+                        <img src="Imagens/placeholder.jpg" alt="Capa Jogo D">
+                        <h3>Jogo D</h3>
+                        <p>★ 3.8</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo E -->
+                    <article>
+                        <img src="Imagens/placeholder.jpg" alt="Capa Jogo E">
+                        <h3>Jogo E</h3>
+                        <p>★ 4.0</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo F -->
+                    <article>
+                        <img src="Imagens/placeholder.jpg" alt="Capa Jogo F">
+                        <h3>Jogo F</h3>
+                        <p>★ 4.6</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo G -->
+                    <article>
+                        <img src="Imagens/placeholder.jpg" alt="Capa Jogo G">
+                        <h3>Jogo G</h3>
+                        <p>★ 4.1</p>
+                        <button type="button">+</button>
+                    </article>
+
+                    <!-- Jogo H -->
+                    <article>
+                        <img src="Imagens/placeholder.jpg" alt="Capa Jogo H">
+                        <h3>Jogo H</h3>
+                        <p>★ 4.5</p>
+                        <button type="button">+</button>
+                    </article>
+                </div>
+
+                <!-- PAGINAÇÃO -->
+                <div class="pagination">
+                    <button type="button">&lt; Anterior</button>
+                    <span>Page 1 of 52</span>
+                    <button type="button">Próximo &gt;</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- RODAPÉ DA PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Playr. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Redes Sociais</a></li>
+        </ul>
+    </footer>
+    <script src="Playr.js"></script>
+</body>
+</html>
